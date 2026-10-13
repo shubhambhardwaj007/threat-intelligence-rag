@@ -71,7 +71,6 @@ def build_processed() -> dict:
     out_path = Path(s.data_dir) / "processed" / "nvd.jsonl"  #jsonl: A json file where each line is an independent JSON object 
     tmp_path = out_path.with_suffix(".part")
     stats = {"written": 0, "rejected": 0, "no_score": 0}
-    current_year = s.nvd_data_years[0]
 
     with open(tmp_path, "w") as out:
         for year in range(s.nvd_data_years[0],s.nvd_data_years[1]+1):
@@ -85,7 +84,6 @@ def build_processed() -> dict:
                     stats["no_score"] += doc.metadata["cvss_score"] is None
                     out.write(doc.model_dump_json() + "\n")
                     stats["written"] += 1
-            current_year = current_year + 1
 
     tmp_path.replace(out_path)
     return stats
