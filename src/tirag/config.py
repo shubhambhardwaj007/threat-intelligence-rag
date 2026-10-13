@@ -11,7 +11,7 @@ class Settings(BaseSettings):
     qdrant_api_key: str = ""
     postgres_dsn: str = ""
     nvd_api_key: str = ""            # optional, raises NVD rate limits
-    nvd_data_years: tuple = (2002,2026)
+    nvd_data_years: tuple[int, int] = (2024, 2026)
 
 
 @lru_cache
