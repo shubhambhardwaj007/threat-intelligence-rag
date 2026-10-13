@@ -50,7 +50,7 @@ def parse_cve(item: dict) -> Document | None:
 
     desc = next((d["value"] for d in cve.get("descriptions", []) if d["lang"] == "en"), "")
     score, severity = _pick_cvss(cve.get("metrics", {}))
-    
+
     cwes = sorted({d["value"] for w in cve.get("weaknesses", [])
                    for d in w.get("description", []) if d["value"].startswith("CWE-")})
     cpe_matches = [m for cfg in cve.get("configurations", [])
@@ -74,7 +74,7 @@ def build_processed() -> dict:
     current_year = s.nvd_data_years[0]
 
     with open(tmp_path, "w") as out:
-        for year in range(s.nvd_data_years[0],s.nvd_data_years[1]+1)
+        for year in range(s.nvd_data_years[0],s.nvd_data_years[1]+1):
             raw = Path(s.data_dir) / "raw" / "nvd" / f"nvdcve-2.0-{year}.json.gz"
             with gzip.open(raw, "rt") as f:
                 for item in json.load(f)["vulnerabilities"]:
