@@ -6,6 +6,7 @@ class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_prefix="TIRAG_", env_file=".env", extra="ignore")
 
     env: str = "dev"                 # dev | prod
+    data_dir: str = "./data"         # Colab: a Drive folder; prod: a mounted volume
     qdrant_url: str = ""
     qdrant_api_key: str = ""
     postgres_dsn: str = ""
