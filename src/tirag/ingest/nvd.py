@@ -11,7 +11,7 @@ def download_year(year: int, force_add: bool = False) -> Path:
     out_dir.mkdir(parents=True, exist_ok=True)
     out_path = out_dir / f"nvdcve-2.0-{year}.json.gz"
 
-    if out_path.exists() and not force:
+    if out_path.exists() and not force_add:
         print(f"skipping {year}: already downloaded")
         return out_path
 
