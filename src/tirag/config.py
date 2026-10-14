@@ -12,6 +12,7 @@ class Settings(BaseSettings):
     postgres_dsn: str = ""
     nvd_api_key: str = ""            # optional, raises NVD rate limits
     nvd_data_years: tuple[int, int] = (2024, 2026)
+    attack_versions: dict[str,str] = {"enterprise-attack": "20.0","ics-attack": "20.0","mobile-attack": "20.0"}
 
 
 @lru_cache
