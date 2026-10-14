@@ -1,6 +1,8 @@
 from pathlib import Path
 from tirag.config import get_settings
 from tirag.ingest.http import download_file
+import json, re
+from tirag.schema import Document
 
 BASE_URL = "https://raw.githubusercontent.com/mitre-attack/attack-stix-data/refs/heads/master"
 
@@ -11,11 +13,11 @@ def download_attack(force: bool = False) -> list[Path]:
         paths.append(download_file(f"{BASE_URL}/{attack_type}/{attack_type}-{version}.json", out, force))
     return paths
 
-import json, re
-from tirag.schema import Document
+
 
 KEEP = {"attack-pattern": "technique", "intrusion-set": "group",
-        "course-of-action": "mitigation", "malware": "software", "tool": "software"}
+        "course-of-action": "mitigation", "malware": "software", "tool": "software",
+        "campaign": "campaign"}
 
 
 def _clean(text: str) -> str:
