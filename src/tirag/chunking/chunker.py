@@ -4,6 +4,18 @@ from tirag.config import get_settings
 from tirag.schema import Document, Chunk
 
 
+MAX_PRODUCTS = 5
+def _products(doc: Document) -> list[str]:
+    """'cpe:2.3:o:microsoft:windows_10:...' -> 'microsoft windows_10', unique, capped."""
+    seen = []
+    for m in doc.structured.get("cpe_matches", []):
+        if not m.get("vulnerable"):
+            continue
+        parts = m["criteria"].split(":")
+        name = f"{parts[3]} {parts[4]}"
+        if name not in seen:
+            seen.append(name)
+    return seen[:MAX_PRODUCTS]
 
 def header(doc: Document) -> str:
     md = doc.metadata
