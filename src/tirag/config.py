@@ -14,6 +14,7 @@ class Settings(BaseSettings):
     nvd_data_years: tuple[int, int] = (2024, 2026)
     attack_versions: dict[str,str] = {"enterprise-attack": "20.0","ics-attack": "20.0","mobile-attack": "20.0"}
     attack_index_domains: list[str] = ["enterprise-attack"]
+    chunk_max_words: int = 300
 
 
 @lru_cache

@@ -7,3 +7,11 @@ class Document(BaseModel):
     text: str                                 # what gets embedded
     metadata: dict = Field(default_factory=dict)    # filterable: severity, dates, CWE
     structured: dict = Field(default_factory=dict)  # machine data, never embedded
+
+class Chunk(BaseModel):
+    chunk_id: str          # "CVE-2024-20683#0" — stable, so re-indexing overwrites instead of duplicating
+    doc_id: str
+    source: str
+    text: str              # clean text, for display and citations
+    embed_text: str        # header + text, what gets embedded
+    metadata: dict = Field(default_factory=dict)
