@@ -21,6 +21,7 @@ KEEP = {"attack-pattern": "technique", "intrusion-set": "group",
 
 
 def _clean(text: str) -> str:
+    text = re.sub(r"<[^>]+>", "", text)                         # strip HTML tags
     text = re.sub(r"\(Citation: [^)]*\)", "", text)            # drop "(Citation: X)"
     text = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", text)        # markdown link -> its text
     return re.sub(r"\s+", " ", text).strip()
