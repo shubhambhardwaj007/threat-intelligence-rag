@@ -38,7 +38,9 @@ def split_text(text: str, max_words: int) -> list[str]:
     for s in sentences:
         if current and len(" ".join(current + [s]).split()) > max_words:
             chunks.append(" ".join(current))
-            current = current[-1:]          # overlap: carry the last sentence forward
+            #current = current[-1:]          # overlap: carry the last sentence forward
+            last = current[-1]             #Here we are keeping overlapping sentence if sentence length is 1/4 of total chunk size so that two splitted chunks donot have same embedded data.
+            current = [last] if len(last.split()) <= max_words //4 else []
         current.append(s)
     chunks.append(" ".join(current))
     return chunks
