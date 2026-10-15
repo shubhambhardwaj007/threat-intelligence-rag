@@ -31,7 +31,7 @@ def embed_all(emb, shard_size: int = 10000) -> None:
         shard = out_dir / f"shard_{shard_count}.npz"
 
         if shard.exists() and np.load(shard)["ids"].tolist() == shard_ids:
-            print(f"skip shard {n}")
+            print(f"skip shard {shard_count}")
             continue
 
         vecs = emb.embed_documents(texts[start:start + shard_size])
