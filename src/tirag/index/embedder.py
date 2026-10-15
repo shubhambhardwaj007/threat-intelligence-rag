@@ -1,5 +1,6 @@
 import numpy as np
 from sentence_transformers import SentenceTransformer
+import torch
 
 class STEmbedder:
     """sentence-transformers model behind a small, swappable interface."""
