@@ -24,19 +24,16 @@ def embeddings_dir(model_name: str) -> Path:
 def embed_all(emb, shard_size: int = 10000) -> None:
     ids, texts = _load_chunks()
     out_dir = embeddings_dir(emb.name)
-    shard_count = 0
-
-    for start in range(0, len(ids), shard_size):
+    for n, start in enumerate(range(0, len(ids), shard_size)):
         shard_ids = ids[start:start + shard_size]
-        shard = out_dir / f"shard_{shard_count}.npz"
+        shard = out_dir / f"shard_{n:04d}.npz"
 
         if shard.exists() and np.load(shard)["ids"].tolist() == shard_ids:
-            print(f"skip shard {shard_count}")
+            print(f"skip shard {n}")
             continue
 
         vecs = emb.embed_documents(texts[start:start + shard_size])
         tmp = out_dir / f"shard_{shard_count}.part.npz"
         np.savez(tmp, ids=np.array(shard_ids), vecs=vecs.astype(np.float16))
         tmp.replace(shard)
-        print(f"saved shard {shard_count}: {len(shard_ids)} chunks")
-        shard_count = shard_count+1
+        print(f"saved shard {n}: {len(shard_ids)} chunks")
