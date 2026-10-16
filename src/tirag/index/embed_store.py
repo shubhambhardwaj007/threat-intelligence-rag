@@ -33,7 +33,7 @@ def embed_all(emb, shard_size: int = 10000) -> None:
             continue
 
         vecs = emb.embed_documents(texts[start:start + shard_size])
-        tmp = out_dir / f"shard_{shard_count}.part.npz"
+        tmp = out_dir / f"shard_{n}.part.npz"
         np.savez(tmp, ids=np.array(shard_ids), vecs=vecs.astype(np.float16))
         tmp.replace(shard)
         print(f"saved shard {n}: {len(shard_ids)} chunks")
