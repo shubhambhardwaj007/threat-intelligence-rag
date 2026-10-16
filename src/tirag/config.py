@@ -15,6 +15,7 @@ class Settings(BaseSettings):
     attack_versions: dict[str,str] = {"enterprise-attack": "20.0","ics-attack": "20.0","mobile-attack": "20.0"}
     attack_index_domains: list[str] = ["enterprise-attack"]
     chunk_max_words: int = 300
+    chroma_path: str = "./chroma"
 
 
 @lru_cache
