@@ -1,0 +1,100 @@
+{"qid": "q001", "type": "exact_id", "question": "What is CVE-2026-104733?", "relevant_ids": ["CVE-2026-104733"]}
+{"qid": "q002", "type": "exact_id", "question": "Tell me about CVE-2025-60557", "relevant_ids": ["CVE-2025-60557"]}
+{"qid": "q003", "type": "exact_id", "question": "CVE-2026-17160 details", "relevant_ids": ["CVE-2026-17160"]}
+{"qid": "q004", "type": "exact_id", "question": "Which product does CVE-2024-5471 affect?", "relevant_ids": ["CVE-2024-5471"]}
+{"qid": "q005", "type": "exact_id", "question": "Explain CVE-2026-82710", "relevant_ids": ["CVE-2026-82710"]}
+{"qid": "q006", "type": "exact_id", "question": "CVE-2026-4570", "relevant_ids": ["CVE-2026-4570"]}
+{"qid": "q007", "type": "exact_id", "question": "What is CVE-2026-18622 about?", "relevant_ids": ["CVE-2026-18622"]}
+{"qid": "q008", "type": "exact_id", "question": "What is S0672 in MITRE ATT&CK?", "relevant_ids": ["S0672"]}
+{"qid": "q009", "type": "exact_id", "question": "G1001", "relevant_ids": ["G1001"]}
+{"qid": "q010", "type": "exact_id", "question": "Describe ATT&CK software S0516", "relevant_ids": ["S0516"]}
+{"qid": "q011", "type": "product_flaw", "question": "SQL injection in the Amazon Redshift JDBC driver when simple query mode is turned on", "relevant_ids": ["CVE-2024-32888"]}
+{"qid": "q012", "type": "product_flaw", "question": "JeecgBoot lets a logged-in user read another user's text-to-speech history", "relevant_ids": ["CVE-2026-108609"]}
+{"qid": "q013", "type": "product_flaw", "question": "Zabbix super admin can steal the LDAP bind password by pointing LDAP at a malicious server", "relevant_ids": ["CVE-2025-27231"]}
+{"qid": "q014", "type": "product_flaw", "question": "stored XSS in the Livemesh addons plugin for Elementor", "relevant_ids": ["CVE-2026-39636"]}
+{"qid": "q015", "type": "product_flaw", "question": "Debusine has no permission check when linking or unlinking artifacts", "relevant_ids": ["CVE-2026-11852"]}
+{"qid": "q016", "type": "product_flaw", "question": "OpenClaw approval prompt skipped when commands are wrapped in env inside allowlist mode", "relevant_ids": ["CVE-2026-32023"]}
+{"qid": "q017", "type": "product_flaw", "question": "Centrifugo websocket compression lets a client exhaust server memory with a decompression bomb", "relevant_ids": ["CVE-2026-62963"]}
+{"qid": "q018", "type": "product_flaw", "question": "SQL injection in a tailoring shop management system from itsourcecode", "relevant_ids": ["CVE-2025-0947"]}
+{"qid": "q019", "type": "product_flaw", "question": "PayPal plugin for WooCommerce leaks customers' billing and shipping addresses to anonymous visitors", "relevant_ids": ["CVE-2026-80340"]}
+{"qid": "q020", "type": "product_flaw", "question": "macOS bug letting an app change protected parts of the disk, fixed in Sequoia 15.4", "relevant_ids": ["CVE-2025-24164"]}
+{"qid": "q021", "type": "product_flaw", "question": "contributor-level stored XSS in a WordPress plugin for sharing posts to Google Classroom", "relevant_ids": ["CVE-2025-12711"]}
+{"qid": "q022", "type": "product_flaw", "question": "CSRF that leads to stored XSS in the LionScripts site maintenance WordPress plugin", "relevant_ids": ["CVE-2024-54425"]}
+{"qid": "q023", "type": "product_flaw", "question": "cross-site scripting on lesson plan pages in Portabilis i-Diario", "relevant_ids": ["CVE-2025-8788"]}
+{"qid": "q024", "type": "product_flaw", "question": "NVIDIA DGX Spark firmware flaw that allows data tampering", "relevant_ids": ["CVE-2025-33199"]}
+{"qid": "q025", "type": "product_flaw", "question": "malformed packet crashes the MACsec process on Arista EOS switches", "relevant_ids": ["CVE-2025-7048"]}
+{"qid": "q026", "type": "product_flaw", "question": "open redirect in a WordPress plugin that exports pages as static HTML", "relevant_ids": ["CVE-2024-3597"]}
+{"qid": "q027", "type": "product_flaw", "question": "unauthenticated crash of the Ella Core 5G core through a malformed NGAP location report", "relevant_ids": ["CVE-2026-33282"]}
+{"qid": "q028", "type": "product_flaw", "question": "remote code execution through cookie values in Salesforce Workbench", "relevant_ids": ["CVE-2026-35178"]}
+{"qid": "q029", "type": "product_flaw", "question": "SSRF in OpenClaw channel extensions that reaches internal network addresses", "relevant_ids": ["CVE-2026-35629"]}
+{"qid": "q030", "type": "product_flaw", "question": "a tiny malicious msgpack file exhausts the JVM heap in MessagePack for Java", "relevant_ids": ["CVE-2026-21452"]}
+{"qid": "q031", "type": "product_flaw", "question": "low-privileged user can hang or crash MySQL Server through the query optimizer", "relevant_ids": ["CVE-2026-34303"]}
+{"qid": "q032", "type": "product_flaw", "question": "privilege escalation in the Broadcom Automic Automation agent on Unix and Linux", "relevant_ids": ["CVE-2026-8370"]}
+{"qid": "q033", "type": "product_flaw", "question": "authorization bypass in the PickPlugins Post Grid and Gutenberg Blocks plugin", "relevant_ids": ["CVE-2025-63043"]}
+{"qid": "q034", "type": "product_flaw", "question": "Eleveo call recording software exposes the ID token in the logout URL", "relevant_ids": ["CVE-2026-108808"]}
+{"qid": "q035", "type": "product_flaw", "question": "use-after-free in MongoDB field-level encryption query analysis (mongocryptd)", "relevant_ids": ["CVE-2026-8201"]}
+{"qid": "q036", "type": "technique", "question": "overwriting binaries that an installer unpacks into a writable temp folder to get SYSTEM-level execution", "relevant_ids": ["T1574.005"]}
+{"qid": "q037", "type": "technique", "question": "backdooring a public-facing web server with a script that gives remote command access", "relevant_ids": ["T1505.003"]}
+{"qid": "q038", "type": "technique", "question": "pretending to be a CEO or supplier in email to trick staff into sending money", "relevant_ids": ["T1684.001"]}
+{"qid": "q039", "type": "technique", "question": "getting into a company network by joining its wireless network, possibly through a nearby compromised device", "relevant_ids": ["T1669"]}
+{"qid": "q040", "type": "technique", "question": "stopping bash from saving the commands an attacker types", "relevant_ids": ["T1690"]}
+{"qid": "q041", "type": "technique", "question": "sending stolen data out only at fixed times of day so it blends with normal traffic", "relevant_ids": ["T1029"]}
+{"qid": "q042", "type": "technique", "question": "persistence by loading a malicious DLL into the Windows local security authority process", "relevant_ids": ["T1547.008"]}
+{"qid": "q043", "type": "technique", "question": "chaining several proxies or Tor to hide where command-and-control traffic really comes from", "relevant_ids": ["T1090.003"]}
+{"qid": "q044", "type": "technique", "question": "making attacker-created accounts invisible on the login screen", "relevant_ids": ["T1564.002"]}
+{"qid": "q045", "type": "technique", "question": "malware works out its C2 port from the numbers in an IP address returned by a DNS lookup", "relevant_ids": ["T1568.003"]}
+{"qid": "q046", "type": "technique", "question": "manipulating the help desk over phone or chat into resetting someone's MFA or password", "relevant_ids": ["T1684"]}
+{"qid": "q047", "type": "technique", "question": "assembling a malicious file inside the browser with JavaScript so web filters never see it", "relevant_ids": ["T1027.006"]}
+{"qid": "q048", "type": "technique", "question": "hiding instructions in a web page or email so an AI assistant that reads it misbehaves", "relevant_ids": ["T1698"]}
+{"qid": "q049", "type": "technique", "question": "changing a Windows service's executable path in the registry to run attacker code", "relevant_ids": ["T1574.011"]}
+{"qid": "q050", "type": "technique", "question": "enrolling the attacker's own phone in Okta or Duo MFA after stealing a password", "relevant_ids": ["T1098.005"]}
+{"qid": "q051", "type": "technique", "question": "phone-call phishing that talks the victim into installing remote support software", "relevant_ids": ["T1566.004"]}
+{"qid": "q052", "type": "technique", "question": "abusing cached sudo credentials or the sudoers file to get root", "relevant_ids": ["T1548.003"]}
+{"qid": "q053", "type": "technique", "question": "copying a system tool like rundll32 under another name to dodge detection rules", "relevant_ids": ["T1036.003"]}
+{"qid": "q054", "type": "technique", "question": "automated browser that imitates human behaviour to get past CAPTCHA checks", "relevant_ids": ["T1696.002"]}
+{"qid": "q055", "type": "technique", "question": "editing a payload's header bytes so malware looks like a JPEG image", "relevant_ids": ["T1036.008"]}
+{"qid": "q056", "type": "group_software_campaign", "question": "threat group that spied on travelling executives through hotel internet connections", "relevant_ids": ["G0012"]}
+{"qid": "q057", "type": "group_software_campaign", "question": "JScript backdoor shared by Cobalt Group and FIN6", "relevant_ids": ["S0284"]}
+{"qid": "q058", "type": "group_software_campaign", "question": "remote command shell tool used by Dragonfly", "relevant_ids": ["S0500"]}
+{"qid": "q059", "type": "group_software_campaign", "question": "C++ remote access tool used only by Lazarus Group", "relevant_ids": ["S1182"]}
+{"qid": "q060", "type": "group_software_campaign", "question": "credential-stealing tool tied to NIMBUS MANTICORE, first seen in 2025", "relevant_ids": ["S9065"]}
+{"qid": "q061", "type": "group_software_campaign", "question": "malware that breaks into Kubernetes clusters through Windows containers", "relevant_ids": ["S0623"]}
+{"qid": "q062", "type": "group_software_campaign", "question": "espionage campaign linked to APT41 that stole blueprints and source code from manufacturers", "relevant_ids": ["C0012"]}
+{"qid": "q063", "type": "group_software_campaign", "question": "ransomware written in Go from the OpJerusalem 2019 campaign", "relevant_ids": ["S0389"]}
+{"qid": "q064", "type": "group_software_campaign", "question": "open-source command-and-control framework released in 2022 by C5pider", "relevant_ids": ["S1229"]}
+{"qid": "q065", "type": "group_software_campaign", "question": "downloader used by BRONZE BUTLER", "relevant_ids": ["S0469"]}
+{"qid": "q066", "type": "group_software_campaign", "question": "APT29 backdoor based on Dropbear SSH that runs on network appliances", "relevant_ids": ["S1084"]}
+{"qid": "q067", "type": "group_software_campaign", "question": "China-linked group going after Taiwan's semiconductor industry and airline data", "relevant_ids": ["G0114"]}
+{"qid": "q068", "type": "group_software_campaign", "question": "North Korean espionage group mostly targeting South Korea since 2012", "relevant_ids": ["G0067"]}
+{"qid": "q069", "type": "group_software_campaign", "question": "C++ remote access trojan used by Putter Panda", "relevant_ids": ["S0066"]}
+{"qid": "q070", "type": "group_software_campaign", "question": "C# backdoor that is a newer version of Milan, used by HEXANE", "relevant_ids": ["S1019"]}
+{"qid": "q071", "type": "mitigation", "question": "reducing what attackers can learn before an attack, such as details in job posts and lookalike domains", "relevant_ids": ["M1056"]}
+{"qid": "q072", "type": "mitigation", "question": "protecting LSASS with RunAsPPL and blocking code injection into privileged processes", "relevant_ids": ["M1025"]}
+{"qid": "q073", "type": "mitigation", "question": "allowlisting applications with AppLocker or WDAC so only approved programs can run", "relevant_ids": ["M1038"]}
+{"qid": "q074", "type": "mitigation", "question": "decrypting HTTPS traffic at the network edge to look for malware", "relevant_ids": ["M1020"]}
+{"qid": "q075", "type": "mitigation", "question": "regularly scanning servers and cloud accounts for missing patches and misconfigurations", "relevant_ids": ["M1016"]}
+{"qid": "q076", "type": "mitigation", "question": "hardening Windows elevation prompts to stop UAC bypass", "relevant_ids": ["M1052"]}
+{"qid": "q077", "type": "mitigation", "question": "only allowing signed scripts and drivers to execute", "relevant_ids": ["M1045"]}
+{"qid": "q078", "type": "mitigation", "question": "stopping sensitive data from leaving through USB drives, email attachments or cloud uploads", "relevant_ids": ["M1057"]}
+{"qid": "q079", "type": "mitigation", "question": "splitting the network into zones with VLANs and a DMZ to limit lateral movement", "relevant_ids": ["M1030"]}
+{"qid": "q080", "type": "mitigation", "question": "turning off SMBv1, Telnet and other unused services to shrink the attack surface", "relevant_ids": ["M1042"]}
+{"qid": "q081", "type": "near_duplicate", "question": "LSASS information disclosure vulnerability on Windows 10 version 1507", "relevant_ids": ["CVE-2024-20692"], "review": "check twins"}
+{"qid": "q082", "type": "near_duplicate", "question": "CSRF in the engineering change order component of Oracle Installed Base", "relevant_ids": ["CVE-2024-20934"], "review": "check twins"}
+{"qid": "q083", "type": "near_duplicate", "question": "privilege escalation in Chromium-based Microsoft Edge caused by a heap overflow", "relevant_ids": ["CVE-2024-21337"], "review": "check twins"}
+{"qid": "q084", "type": "near_duplicate", "question": "libarchive remote code execution on Windows 11 22H2", "relevant_ids": ["CVE-2024-20696"], "review": "check twins"}
+{"qid": "q085", "type": "near_duplicate", "question": "out-of-bounds read that leaks memory in Adobe Substance 3D Stager", "relevant_ids": ["CVE-2024-20711"], "review": "check twins"}
+{"qid": "q086", "type": "near_duplicate", "question": "access control flaw in Samsung's Nearby device scanning", "relevant_ids": ["CVE-2024-20809"], "review": "check twins"}
+{"qid": "q087", "type": "near_duplicate", "question": "Hyper-V remote code execution caused by a race condition on Windows 11", "relevant_ids": ["CVE-2024-20700"], "review": "check twins"}
+{"qid": "q088", "type": "near_duplicate", "question": "Windows HTML Platforms security feature bypass on Windows 10 version 1607", "relevant_ids": ["CVE-2024-20652"], "review": "check twins"}
+{"qid": "q089", "type": "near_duplicate", "question": "BitLocker security feature bypass from improper input validation on Windows 10", "relevant_ids": ["CVE-2024-20666"], "review": "check twins"}
+{"qid": "q090", "type": "near_duplicate", "question": "denial of service in Acrobat Reader running inside Microsoft Edge", "relevant_ids": ["CVE-2024-20721"], "review": "check twins"}
+{"qid": "q091", "type": "unanswerable", "question": "What is the Heartbleed bug in OpenSSL (CVE-2014-0160)?", "relevant_ids": [], "review": "verify absent"}
+{"qid": "q092", "type": "unanswerable", "question": "Log4Shell remote code execution in Apache Log4j 2 (CVE-2021-44228)", "relevant_ids": [], "review": "verify absent"}
+{"qid": "q093", "type": "unanswerable", "question": "Details of the EternalBlue SMBv1 vulnerability CVE-2017-0144", "relevant_ids": [], "review": "verify absent"}
+{"qid": "q094", "type": "unanswerable", "question": "Which technique covers SIM swapping on Android phones?", "relevant_ids": [], "review": "verify absent"}
+{"qid": "q095", "type": "unanswerable", "question": "Vulnerabilities in the Acme RoboVac 3000 vacuum firmware", "relevant_ids": [], "review": "verify absent"}
+{"qid": "q096", "type": "unanswerable", "question": "Operation Glass Lantern campaign attributed to a Brazilian threat group", "relevant_ids": [], "review": "verify absent"}
+{"qid": "q097", "type": "unanswerable", "question": "The Windows XP RPC DCOM flaw exploited by the Blaster worm", "relevant_ids": [], "review": "verify absent"}
+{"qid": "q098", "type": "unanswerable", "question": "Shellshock bash environment variable vulnerability from 2014", "relevant_ids": [], "review": "verify absent"}
+{"qid": "q099", "type": "unanswerable", "question": "How attackers break quantum key distribution systems", "relevant_ids": [], "review": "verify absent"}
+{"qid": "q100", "type": "unanswerable", "question": "Spectre CPU speculative execution vulnerability CVE-2017-5753", "relevant_ids": [], "review": "verify absent"}
