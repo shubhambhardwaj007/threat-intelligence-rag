@@ -7,7 +7,9 @@ BATCH = 4000   # Chroma caps how many records one call accepts
 class ChromaStore:
     def __init__(self, path: str, collection: str = "tirag"):
         self.client = chromadb.PersistentClient(path=path)
-        self.col = self.client.get_or_create_collection(collection, metadata={"hnsw:space": "cosine"})
+        self.col = self.client.get_or_create_collection(
+            collection,
+            configuration={"hnsw": {"space": "cosine", "ef_construction": 200,"ef_search": 200, "max_neighbors": 32}})
 
     def upsert(self, ids, vectors: np.ndarray, texts, metadatas) -> None:
         for i in range(0, len(ids), BATCH):
